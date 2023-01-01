@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width">
+        <title>QR CODE SIGN IN</title>
+        <link rel="stylesheet" href = "web.css">
+        <script src="web.js"></script>
+    </head>
+    <body>
+        <div id = "webmain">
+            <div class = 'main_1'>
+                <form>
+                    <label class="title">Choose your server</label></br>
+                    <div class = 'pa'>
+                        <label class="class">Class</label>
+                        <select class="sel" id = "cl">
+                            <option value="9A1">9A1</option>
+                            <option value="9A2">9A2</option>
+                            <option value="9A3">9A3</option>
+                            <option value="9A4">9A4</option>
+                            <option value="9A5">9A5</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div>
+                    <label class="choose">Sign in as a: </label>
+                    <input type="radio" id="ta" name="fav_language" value="teacher">
+                    <label for="teacher" class="teacher">Teacher</label>
+                    <input type="radio" id="st" name="fav_language" value="student">
+                    <label for="student" class="teacher">Student</label><br>
+                    </diV>
+                </form>
+                <div class = "main_2">
+                    <label class="in" id = "in">Input your username</label>
+                    <input type = "text" id = "user" class="box" name = "text"></br>
+                    <label class="in">Input your password</label>
+                    <input type = "password" id = "password" class="box">
+                </div>
+                <button class="glow-on-hover" onclick="signin()">SIGN IN</button>
+        </div>
+    </body>
+</html>
